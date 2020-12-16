@@ -1,0 +1,65 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  creationTimestamp: "2020-12-16T13:06:09Z"
+  generation: 1
+  managedFields:
+  - apiVersion: operators.coreos.com/v1alpha1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:spec:
+        .: {}
+        f:channel: {}
+        f:installPlanApproval: {}
+        f:name: {}
+        f:source: {}
+        f:sourceNamespace: {}
+        f:startingCSV: {}
+    manager: Mozilla
+    operation: Update
+    time: "2020-12-16T13:06:09Z"
+  - apiVersion: operators.coreos.com/v1alpha1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:spec:
+        f:config:
+          .: {}
+          f:resources: {}
+      f:status:
+        .: {}
+        f:catalogHealth: {}
+        f:conditions: {}
+        f:currentCSV: {}
+        f:installPlanGeneration: {}
+        f:installPlanRef:
+          .: {}
+          f:apiVersion: {}
+          f:kind: {}
+          f:name: {}
+          f:namespace: {}
+          f:resourceVersion: {}
+          f:uid: {}
+        f:installedCSV: {}
+        f:installplan:
+          .: {}
+          f:apiVersion: {}
+          f:kind: {}
+          f:name: {}
+          f:uuid: {}
+        f:lastUpdated: {}
+        f:state: {}
+    manager: catalog
+    operation: Update
+    time: "2020-12-16T13:06:15Z"
+  name: splunk-certified
+  namespace: splunk-operator
+  resourceVersion: "3466409"
+  selfLink: /apis/operators.coreos.com/v1alpha1/namespaces/splunk-operator/subscriptions/splunk-certified
+  uid: b97a1018-51b7-40b1-adb6-e1880a23a4cb
+spec:
+  channel: alpha
+  installPlanApproval: Automatic
+  name: splunk-certified
+  source: certified-operators
+  sourceNamespace: openshift-marketplace
+  startingCSV: splunk.v0.1.0
