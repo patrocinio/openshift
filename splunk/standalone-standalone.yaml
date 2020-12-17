@@ -1,0 +1,71 @@
+﻿apiVersion: enterprise.splunk.com/v1alpha2
+kind: Standalone
+metadata:
+  selfLink: >-
+    /apis/enterprise.splunk.com/v1alpha2/namespaces/splunk-operator/standalones/standalone
+  name: standalone
+  generation: 1
+  managedFields:
+    - apiVersion: enterprise.splunk.com/v1alpha2
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:finalizers':
+            .: {}
+            'v:"enterprise.splunk.com/delete-pvc"': {}
+        'f:spec': {}
+      manager: Mozilla
+      operation: Update
+      time: '2020-12-17T11:41:20Z'
+    - apiVersion: enterprise.splunk.com/v1alpha2
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:spec':
+          'f:licenseUrl': {}
+          'f:licenseMasterRef': {}
+          'f:indexerClusterRef': {}
+          'f:volumes': {}
+          'f:defaults': {}
+          'f:image': {}
+          'f:varStorage': {}
+          'f:defaultsUrl': {}
+          'f:sparkRef': {}
+          'f:replicas': {}
+          'f:resources':
+            .: {}
+            'f:limits':
+              .: {}
+              'f:cpu': {}
+              'f:memory': {}
+            'f:requests':
+              .: {}
+              'f:cpu': {}
+              'f:memory': {}
+          'f:sparkImage': {}
+          'f:schedulerName': {}
+          'f:etcStorage': {}
+          'f:serviceTemplate':
+            .: {}
+            'f:metadata':
+              .: {}
+              'f:creationTimestamp': {}
+            'f:spec': {}
+            'f:status':
+              .: {}
+              'f:loadBalancer': {}
+          'f:storageClassName': {}
+          'f:affinity': {}
+          'f:imagePullPolicy': {}
+        'f:status':
+          .: {}
+          'f:phase': {}
+          'f:readyReplicas': {}
+          'f:replicas': {}
+          'f:selector': {}
+      manager: splunk-operator
+      operation: Update
+      time: '2020-12-17T11:41:50Z'
+  namespace: splunk-operator
+  finalizers:
+    - enterprise.splunk.com/delete-pvc
+spec: {}
